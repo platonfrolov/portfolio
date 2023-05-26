@@ -1,0 +1,227 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+
+  #wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .text-container {
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+  }
+  
+ #text {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 20px;
+    display: inline-flex;
+    animation: slide 5s ease-out infinite;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    10% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    85% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    99% {
+        opacity: 0;
+      }
+    100% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+  }
+  
+  a {
+    color: #337ab7;
+    text-decoration: none;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #333;
+    padding: 20px 0;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  }
+  
+  /* Hero section styles */
+  #hero {
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #hero .container {
+    /* text-align: center; */
+    color: #fff;
+  }
+  
+  #hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  #hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  /* About Me section styles */
+  #about {
+    padding: 50px 0;
+  }
+  
+  #about p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  /* Projects section styles */
+  #projects {
+    padding: 50px 0;
+  }
+  
+  .project {
+    margin-bottom: 30px;
+  }
+  
+  .project h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .project p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Skills section styles */
+  #skills ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #skills li {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 8px 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  /* Resume/CV section styles */
+  #resume a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  /* Blog section styles */
+  #blog {
+    padding: 50px 0;
+  }
+  
+  /* Contact section styles */
+  #contact {
+    padding: 50px 0;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  /* Mobile styles */
+  @media screen and (max-width: 767px) {
+    #hero {
+      height: 300px;
+    }
+  
+    #hero h1 {
+      font-size: 36px;
+    }
+  
+    #hero p {
+      font-size: 18px;
+    }
+  
+    #about p {
+      font-size: 16px;
+    }
+}
+
+button {
+
+}
